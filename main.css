@@ -1,0 +1,134 @@
+
+body {
+  font-family: Roboto, sans-serif;
+  background-color: rgb(194, 255, 255);
+}
+
+.header {
+  box-sizing: content-box;
+  border: 1px solid black;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 0 20px 480px;
+
+  width: 400px;
+  column-gap: 20px;
+  row-gap: 10px;
+  border-radius: 20px;
+  padding: 20px;
+
+  background-color: #ffffff;
+}
+
+.mainclass{
+  display: flex;
+  justify-content: center;
+  column-gap: 400px;
+  
+
+}
+
+
+.my_links{
+  box-sizing: content-box;
+  
+  background-color: #ffffff;
+
+  width: 600px;
+  height: 500px;
+  border: 1px solid black;
+  border-radius: 20px;
+}
+
+.links_header {
+  text-align: center;
+}
+
+.about_me{
+  box-sizing: content-box;
+  background-color: #ffffff;
+
+  width: 600px;
+  height: 500px;
+  border: 1px solid black;
+  border-radius: 20px;
+}
+
+.aboutme {
+  padding: 0px 100px 0px 20px;
+
+}
+
+.header_title {
+  margin: 0;
+  font-weight: 700;
+  line-height: 1.2;
+
+  align-items: center;
+  
+}
+
+.status {
+  box-sizing: content-box;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0 20px 480px;
+
+width: 400px;
+column-gap: 20px;
+row-gap: 10px;
+border-radius: 20px;
+padding: 20px;
+  border: 1px solid black;
+}
+
+
+  /* Свойства ссылок */
+a {
+  display: block;
+  text-decoration:none;
+  margin-bottom: 1.2em;
+  position: relative;
+}
+
+  /* Что делать при наведении на ссылку */
+a:hover {
+  color:#FFD700;
+}
+
+  /* Этим свойством добавляем подчеркивание через создание псевдокласса */
+a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  transform: translateY(1.5em);
+  border-bottom: 1px solid #dadada;
+  width: 300px;
+}
+
+
+
+h2 {
+  font-size: 1.5em;
+  margin: 1.25em 0;
+}
+
+  /* Свойства фотографии*/
+.photo {
+  border-radius: 100px;
+  /* Радиус скругления */
+  border: 3px solid transparent;
+  /* Параметры рамки */
+  box-shadow: 0 4px 15px 0px rgba(0, 0, 0, 0.52);
+  object-fit: cover;
+}
+
+  /* Эффект наведения на картинку */
+.photo:hover {
+  border: 3px solid #FFD700;
+}
